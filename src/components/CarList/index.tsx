@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { CarsType } from './interface';
 import { setSelectedCar } from 'store/Stock.store';
 import CarCard from '../CarCard';
-import { group } from 'assets';
+import { group } from '../../assets';
 import { Container, ScrollButton } from './styles';
 
 function CarList() {

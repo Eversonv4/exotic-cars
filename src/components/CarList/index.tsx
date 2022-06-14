@@ -17,7 +17,7 @@ function CarList() {
       async function fetchData() {
          const response = await api.get('/cars.json')
             .then((res) => res.data)
-            .catch((error) => console.log("MEU DEUS", error));
+            .catch((error) => console.log(error));
             setCars(response)
       }
       fetchData();

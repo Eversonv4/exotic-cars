@@ -1,5 +1,7 @@
 import { Routes as Switch, Route } from 'react-router-dom';
-// import { Main, SelectedCar } from 
+import Main from '../pages/Main';
+import SelectedCar from '../pages/SelectedCar';
+
 
 const Routes = () => {
    return (

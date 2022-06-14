@@ -1,5 +1,7 @@
-// import { Container } from './styles';
-// import { CarList, Header } from 'components';
+import { Container } from './styles';
+import Header from '../../components/Header';
+import CarList from '../../components/CarList';
+
 
 const Main = () => {
    return (

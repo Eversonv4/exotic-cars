@@ -2,22 +2,26 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { CarsType } from './interface';
-import { setSelectedCar } from 'store/Stock.store';
+import { setSelectedCar } from '../../store/Stock.store';
 import CarCard from '../CarCard';
 import { group } from '../../assets';
 import { Container, ScrollButton } from './styles';
+import api from '../../shared/services/api';
 
 function CarList() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [cars, setCars] = useState<CarsType>();
 
-  useEffect(() => {
-    fetch('./cars.json')
-      .then((res) => res.json())
-      .then((res) => setCars(res))
-      .catch((error) => console.log(error));
-  }, []);
+   useEffect(() => {
+      async function fetchData() {
+         const response = await api.get('/cars.json')
+            .then((res) => res.data)
+            .catch((error) => console.log("MEU DEUS", error));
+            setCars(response)
+      }
+      fetchData();
+   }, []);
 
   return (
     <Container>

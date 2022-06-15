@@ -10,8 +10,7 @@ import {
   InfoDiv,
   Price,
 } from './styles';
-import  ColorCarList  from '../../components/ColorCarList';
-import  Header  from '../../components/Header';
+import  { ColorCarList, Header }  from '../../components';
 import { RootState } from '../../store';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';

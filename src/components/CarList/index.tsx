@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { CarsType } from './interface';
-import { setSelectedCar } from '../../store/Stock.store';
+import { setSelectedCar } from '@store/Stock.store';
 import CarCard from '../CarCard';
-import { group } from '../../assets';
+import { group } from '@assets/index';
 import { Container, ScrollButton } from './styles';
-import api from '../../shared/services/api';
+import api from '@shared/services/api';
 
 function CarList() {
   const dispatch = useDispatch();

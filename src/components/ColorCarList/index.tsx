@@ -1,8 +1,8 @@
 import { ArrowButton, Container, MainSquare, Square } from './styles';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../store';
-import { setCarColor } from '../../store/Stock.store';
+import { RootState } from '@store/index';
+import { setCarColor } from '@store/Stock.store';
 
 function ColorCarList() {
   const dispatch = useDispatch();

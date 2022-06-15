@@ -12,7 +12,7 @@ import {
   Title,
   Title2,
 } from './styles';
-import { locationIcon, calendarIcon, searchIcon } from '../../assets';
+import { locationIcon, calendarIcon, searchIcon } from '@assets/index'
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import { BsSearch } from 'react-icons/bs';
 

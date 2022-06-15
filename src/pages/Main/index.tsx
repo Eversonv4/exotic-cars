@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { Header, CarList } from '../../components'
+import { Header, CarList } from '@components/index'
 
 
 const Main = () => {
